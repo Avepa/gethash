@@ -21,7 +21,7 @@ type Config struct {
 func (ctrl *Controller) Start(ctx context.Context) error {
 	cfg, err := GetStartParams()
 	if err != nil {
-		return nil
+		return err
 	}
 	return ctrl.ctrlUsecase.StartCountingHashes(ctx, cfg)
 }

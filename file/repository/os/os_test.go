@@ -74,7 +74,6 @@ func TestGetFile(t *testing.T) {
 				t.Errorf("")
 			}
 			file.Close()
-
 		}
 	}
 }
